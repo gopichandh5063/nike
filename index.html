@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>T-Shirt Store Reviews</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>T-Shirt Store Reviews</h1>
+
+    <h2>Submit Your Review</h2>
+    <div class="form">
+      <input type="text" id="customerName" placeholder="Your Name">
+      <textarea id="customerFeedback" placeholder="Write your review or problem"></textarea>
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        <option value="4">⭐⭐⭐⭐ 4</option>
+        <option value="3">⭐⭐⭐ 3</option>
+        <option value="2">⭐⭐ 2</option>
+        <option value="1">⭐ 1</option>
+      </select>
+      <button onclick="submitReview()">Submit</button>
+    </div>
+
+    <h2>Customer Reviews</h2>
+    <div id="reviewsList">
+      <!-- Reviews will appear here -->
+    </div>
+
+    <button onclick="clearReviews()" class="clear-btn">Clear All Reviews</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
